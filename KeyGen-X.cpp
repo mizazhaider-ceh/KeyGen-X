@@ -59,7 +59,7 @@ cout << "\t\033[38;5;220m~~~~~  Developed by Aspiring Pentester Mr. Izaz   ~~~~~
 
 cout <<"\t\033[35m~~~~~  Follow Here: GitHub.com/mizazhaider-ceh  ~~~~~\033[0m"<<endl;
 
-cout << "\t\033[94m~~~~~ Internship Task/Project Assigned by ProDigy Infotech ~~~~~\033[0m "<<endl;
+
 
 cout << "\033[32m" << string(75, '=') << "\033[0m" << endl;
 
