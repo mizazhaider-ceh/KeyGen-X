@@ -183,6 +183,6 @@ I am Muhammad Izaz Haider, a cybersecurity enthusiast and ethical hacker with ex
 
 **GitHub:** [mizazhaider-ceh](https://github.com/mizazhaider-ceh)
 
-**LinkedIn:** [Muhammad Izaz Haider](https://linkedin.com/in/mizazhaider)
+**LinkedIn:** [Muhammad Izaz Haider](https://www.linkedin.com/in/muhammad-izaz-haider-091639314)
 
-**Email:** [mizazhaider@gmail.com](mailto:mizazhaider@gmail.com)
+**Email:** [mizazhaiderceh@gmail.com](mailto:mizazhaiderceh@gmail.com)
