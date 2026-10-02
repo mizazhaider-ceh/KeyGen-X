@@ -1,0 +1,10 @@
+# Build outputs
+KeyGen-X
+KeyGen-X.exe
+*.o
+*.obj
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

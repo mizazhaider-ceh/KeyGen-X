@@ -63,14 +63,20 @@ Each factor contributes to the overall password strength:
 ```
 KeyGen-X/
 │── KeyGen-X.cpp         # Main C++ script (Master Script)
-│── keycheck.py         # Python script for key validation
-│── KeyGen-X.exe        # Compiled executable (Windows)
-│── README.md          # Project documentation
-│── screenshots/       # Folder containing example screenshots
-│   │── logo.png       # Project logo
-│   │── working.png    # Example of KeyGen-X in action
-│   │── power.png      # Representation of security strength
+│── keycheck.py          # Python script for key validation
+│── Makefile             # Build with `make` (Linux/macOS)
+│── tests/               # pytest tests for the strength checker
+│── README.md            # Project documentation
+│── screenshots/         # Folder containing example screenshots
+│   │── logo.png         # Project logo
+│   │── working.png      # Example of KeyGen-X in action
+│   │── power.png        # Representation of security strength
+│   └── whole.png        # Complete showcase of KeyGen-X
 ```
+
+> Note: compiled binaries (`KeyGen-X`, `KeyGen-X.exe`) are intentionally not
+> kept in the repo. Build them yourself with the steps below, or grab a
+> ready-made build from the [Releases page](https://github.com/mizazhaider-ceh/KeyGen-X/releases).
 
 ## 🖥 Screenshots
 
@@ -120,7 +126,7 @@ As a cybersecurity enthusiast, I wanted to combine C++ and Python to create an i
 
 ## 🔹 Usage
 
-1️⃣ Run KeyGen-X and it will generate a password of a predefined length.
+1️⃣ Run KeyGen-X and enter the password length you want.
 2️⃣ The tool will prompt you to check the password strength (Yes/Y to proceed).
 3️⃣ KeyGen-X will analyze its strength based on predefined security criteria.
 4️⃣ Receive immediate feedback on whether it's:
@@ -140,7 +146,13 @@ cd KeyGen-X
 
 ### 🔹 Compile the C++ Script
 
-For Windows:
+The easy way (Linux/macOS):
+
+```sh
+make
+```
+
+Or manually. For Windows:
 
 ```sh
 g++ KeyGen-X.cpp -o KeyGen-X.exe
@@ -151,6 +163,16 @@ For Linux/macOS:
 ```sh
 g++ KeyGen-X.cpp -o KeyGen-X
 chmod +x KeyGen-X
+```
+
+> You need Python on your PATH too, since the strength checker (`keycheck.py`)
+> is a Python script. On Linux, `python3` is used automatically.
+
+### 🔹 Run the Tests
+
+```sh
+pip install pytest
+python -m pytest tests/ -v
 ```
 
 ### 🔹 Run the Program
